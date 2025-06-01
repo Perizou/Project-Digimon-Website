@@ -1,0 +1,430 @@
+body{
+    background-color:black;
+    overflow: hidden;
+}
+
+
+main .character{
+    display: none;
+    height: 100vh;
+    object-fit: cover;
+ 
+}
+main .selected.character{
+    display: block;
+    position: relative;
+  
+}
+
+main .character .image{
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ 
+
+}
+
+
+
+
+
+ main .taichi{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: blueviolet;
+    height: 100%;
+   
+    width: 100vw;
+  
+    background: linear-gradient(270deg, rgba(255,255,255,0.35) 0%, rgba(233,137,56,0.35) 100%);;
+  
+  } 
+
+  main .yamato {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: blueviolet;
+    min-height: 100vh;
+    width: 100vw;
+    background: linear-gradient(270deg, rgba(255,255,255,0.35) 0%, rgba(91,121,177,0.35) 100%);
+     
+  } 
+
+  main .sora {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: blueviolet;
+    min-height: 100vh;
+    width: 100vw;
+    background: linear-gradient(270deg, rgba(255,255,255,0.35) 0%, rgba(159,33,43,0.35) 100%);
+     
+  } 
+  main .koshiro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: blueviolet;
+    min-height: 100vh;
+    width: 100vw;
+    background: linear-gradient(270deg, rgba(255,255,255,0.35) 0%, rgba(139,155,167,0.35) 100%);
+     
+  } 
+  main .mimi {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: blueviolet;
+    min-height: 100vh;
+    width: 100vw;
+    background: linear-gradient(270deg, rgba(255,255,255,0.35) 0%, rgba(108,152,67,0.35) 100%);
+     
+  } 
+
+
+
+
+  
+  main .jyo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: blueviolet;
+    min-height: 100vh;
+    width: 100vw;
+    background: linear-gradient(270deg, rgba(255,255,255,0.35) 0%, rgba(106,112,129,0.35) 100%);
+     
+  } 
+  main .takeru {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: blueviolet;
+    min-height: 100vh;
+    width: 100vw;
+    background: linear-gradient(270deg, rgba(255,255,255,0.35) 0%, rgba(196,170,84,0.35) 100%);
+     
+  } 
+  main .hikari {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: blueviolet;
+    min-height: 100vh;
+    width: 100vw;
+    background: linear-gradient(270deg, rgba(255,255,255,0.35) 0%, rgba(185,86,139,0.35) 100%);
+     
+  } 
+
+  .button{
+    overflow: hidden;;
+  }
+  
+
+
+.taichi .character-picture{
+  position: absolute;
+  top: 50px;
+  left: 500px;
+  height: 80%;
+
+}
+
+.yamato .character-picture{
+  position: absolute;
+  top: 90px;
+  left: 480px;
+  height: 80%;
+ 
+
+}
+.sora .character-picture{
+  position: absolute;
+  top: 100px;
+  left: 500px;
+  height: 80%;
+
+
+} 
+.koshiro .character-picture{
+  position: absolute;
+  top: 110px;
+  left: 450px;
+  height: 80%;
+ 
+}
+.mimi .character-picture{
+  position: absolute;
+  top: 100px;
+  left: 450px;
+  height: 60%;
+
+
+}  
+.jyo .character-picture{
+  position: absolute;
+  top: 120px;
+  left: 430px;
+  height: 60%;
+
+
+
+  
+}
+.takeru .character-picture{
+  position: absolute;
+  top: 120px;
+  left: 450px;
+  height: 80%;
+
+
+}
+
+.hikari .character-picture{
+  position: absolute;
+  top: 120px;
+  left: 500px;
+  height: 70%;
+
+
+}
+
+.character-picture{
+  animation: rotate-in-down-left 2s ease;
+}
+
+.content{
+    position:absolute;
+    top:-50px;
+    left: 900px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    height: 80vh;
+    width: 40vh;
+    max-width: 380px;
+    font-size: 16px;
+    font-family: "Rubik";
+    line-height: 20px;
+    text-shadow: -1px -1px 1px gainsboro;
+   
+}
+
+
+
+
+ 
+
+  
+
+@keyframes rotate-in-down-left {
+  0% {
+    transform-origin: left bottom;
+    transform: rotate(-30deg);
+    opacity: 0;
+  }
+  100% {
+    transform-origin: left bottom;
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+
+.content .digidestinied{
+    
+    font-size: 48px;
+    font-family: "Secular One";
+    font-weight: 400;
+    margin-bottom: 20px;
+
+ 
+}
+
+.digimon-picture{
+   animation: rotate-in-up-left 2s ease;
+}
+
+
+
+.digimon-picture-gomamon{
+  position: absolute;
+  top:500px;
+  left: 1150px;
+  height: 35%;
+  animation: rotate-in-up-left 2s ease;
+}
+
+.digimon-picture{
+    position: absolute;
+    top:500px;
+    left: 1100px;
+    height: 40%;
+    animation: rotate-in-up-left 2s ease;
+}
+
+
+@keyframes rotate-in-up-left {
+  0% {
+    transform-origin: left bottom;
+    transform: rotate(30deg);
+    opacity: 0;
+  }
+  100% {
+    transform-origin: left bottom;
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+
+
+
+.digimon{
+    position:absolute;
+    top:500px;
+    left:850px;
+    right: 30%;
+    flex-direction:column;
+    justify-content: center;
+    height: 20vh;
+    width: 38vh;
+    max-width: 290px;
+    font-size: 16px;
+    font-family: "Rubik";
+    line-height: 20px;
+    text-shadow: 1px 1px 1px gray;
+    
+}
+
+
+
+
+.digimon .digimon-name{
+    
+    font-size: 48px;
+    font-family: "Secular One";
+    font-weight: 400;
+    margin-bottom: 20px;
+ 
+    
+}
+
+
+
+
+
+
+
+
+@keyframes pulse {
+  0% {
+      transform: scale(0.95);
+  
+  }
+
+  50% {
+      transform: scale(1);
+
+  }
+
+  100% {
+      transform: scale(0.95);
+
+  }
+}
+
+
+
+
+
+.choicebuttons{
+  
+  position: fixed;
+  top:10px; 
+  left: 1700px;
+  border: none;
+      
+    flex-wrap: wrap;
+    flex-direction:row;
+  
+}
+
+.choicebuttons button {
+  border: none; 
+  
+  background: none; 
+  cursor: pointer; 
+  border-radius: 50%;
+  
+}
+.choicebuttons img {
+  width: 110px;
+  
+}
+
+.digidestiniedbtn{
+  transition: .4s;
+  transform-origin: 50%,50%;
+  opacity: 1;
+  z-index: 2;
+}
+
+.digimonbtn{
+  position: absolute;
+  left: 0px;
+  opacity: 0;
+  filter: blur(20px);
+  transition: .4s;
+}
+
+.choicebuttons li:hover .digidestiniedbtn{
+  filter:blur(20px);
+  transition: .4s;
+  opacity: 0;
+  
+}
+.choicebuttons li:hover .digimonbtn{
+  filter:blur(0px);
+  transition: .4s;
+  opacity: 1;
+  
+}
+
+.choicebuttons .button.taichibtn.selected{
+  
+  box-shadow: 0 -4px 5px rgba(233,137,56,1);
+}
+.choicebuttons .button.yamatobtn.selected{
+  
+  box-shadow: 0 -4px 5px rgba(91,121,177,1);
+}
+
+.choicebuttons .button.sorabtn.selected{
+  
+  box-shadow: 0 -4px 5px rgba(159,33,43,1);
+}
+
+.choicebuttons .button.koshirobtn.selected{
+  
+  box-shadow: 0 -4px 5px rgba(139,155,167,1);
+}
+.choicebuttons .button.mimibtn.selected{
+  
+  box-shadow: 0 -4px 5px rgba(108,152,67,1);
+}
+.choicebuttons .button.jyobtn.selected{
+  
+  box-shadow: 0 4px -5px rgba(106,112,129,1);
+}
+.choicebuttons .button.takerubtn.selected{
+  
+  box-shadow: 0 -4px 5px rgba(196,170,84,1);
+}
+.choicebuttons .button.hikaribtn.selected{
+  
+  box-shadow: 0 -4px 5px rgba(185,86,139,1);
+}
+
