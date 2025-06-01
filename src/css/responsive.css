@@ -3,12 +3,7 @@
     content-visibility: hidden;;
   }
 
-  main .character-picture {
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    height: 80%;
-  }
+
 
   main .content {
     position: absolute;
@@ -26,6 +21,64 @@
     text-shadow: -1px -1px 1px gainsboro;
   }
 
+.taichi .character-picture{
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  height: 80%;
+
+}
+
+.yamato .character-picture{
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  height: 80%;
+
+}
+.sora .character-picture{
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  height: 80%;
+
+}
+.koshiro .character-picture{
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  height: 80%;
+
+}
+.mimi .character-picture{
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  height: 60%;
+
+}
+.jyo .character-picture{
+  position: absolute;
+  top: 150px;
+  left: 50px;
+  height: 60%;
+
+}
+.takeru .character-picture{
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  height: 80%;
+
+}
+.hikari .character-picture{
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  height: 80%;
+
+}
+
   main .digimon-picture {
     position: absolute;
     top: 400px;
@@ -35,13 +88,21 @@
 
   main .digimon {
     position: absolute;
-    top: 800px;
+    top: 700px;
     left: 120px;
     height: 40%;
     min-width: 600px;
     
-    text-shadow: -1px -1px 1px gray;
+    text-shadow: -1px -1px 1px rgb(136, 128, 128);
   }
+
+.digimon-picture-gomamon{
+  position: absolute;
+  top:500px;
+  left: 350px;
+  height: 35%;
+
+}
 
 
 

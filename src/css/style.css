@@ -24,6 +24,10 @@ main .character .image{
 
 }
 
+
+
+
+
  main .taichi{
     position: fixed;
     top: 0;
@@ -125,6 +129,7 @@ main .character .image{
   top: 50px;
   left: 500px;
   height: 80%;
+
 }
 
 .yamato .character-picture{
@@ -132,32 +137,40 @@ main .character .image{
   top: 90px;
   left: 480px;
   height: 80%;
+ 
+
 }
 .sora .character-picture{
   position: absolute;
   top: 100px;
   left: 500px;
   height: 80%;
+
+
 } 
 .koshiro .character-picture{
   position: absolute;
   top: 110px;
   left: 450px;
   height: 80%;
+ 
 }
 .mimi .character-picture{
   position: absolute;
   top: 100px;
   left: 450px;
   height: 60%;
+
+
 }  
 .jyo .character-picture{
   position: absolute;
   top: 120px;
   left: 430px;
   height: 60%;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
+
+
+
   
 }
 .takeru .character-picture{
@@ -165,6 +178,8 @@ main .character .image{
   top: 120px;
   left: 450px;
   height: 80%;
+
+
 }
 
 .hikari .character-picture{
@@ -172,8 +187,12 @@ main .character .image{
   top: 120px;
   left: 500px;
   height: 70%;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
+
+
+}
+
+.character-picture{
+  animation: rotate-in-down-left 2s ease;
 }
 
 .content{
@@ -195,6 +214,25 @@ main .character .image{
 
 
 
+
+ 
+
+  
+
+@keyframes rotate-in-down-left {
+  0% {
+    transform-origin: left bottom;
+    transform: rotate(-30deg);
+    opacity: 0;
+  }
+  100% {
+    transform-origin: left bottom;
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+
+
 .content .digidestinied{
     
     font-size: 48px;
@@ -206,19 +244,43 @@ main .character .image{
 }
 
 .digimon-picture{
+   animation: rotate-in-up-left 2s ease;
+}
+
+
+
+.digimon-picture-gomamon{
+  position: absolute;
+  top:500px;
+  left: 1150px;
+  height: 35%;
+  animation: rotate-in-up-left 2s ease;
+}
+
+.digimon-picture{
     position: absolute;
     top:500px;
     left: 1100px;
     height: 40%;
-    
+    animation: rotate-in-up-left 2s ease;
 }
-.digimon-picture-gomamon{
-    position: absolute;
-    top:500px;
-    left: 1150px;
-    height: 35%;
 
+
+@keyframes rotate-in-up-left {
+  0% {
+    transform-origin: left bottom;
+    transform: rotate(30deg);
+    opacity: 0;
+  }
+  100% {
+    transform-origin: left bottom;
+    transform: rotate(0);
+    opacity: 1;
+  }
 }
+
+
+
 
 .digimon{
     position:absolute;
@@ -237,10 +299,7 @@ main .character .image{
     
 }
 
-.digivolutions{
-  position: fixed;
-  column-count: 1;
-}
+
 
 
 .digimon .digimon-name{
@@ -253,89 +312,12 @@ main .character .image{
     
 }
 
-.digimon .digivolutions {
-    position: relative;
-    top:-480px;
-    left:-850px;
-    
-    
-}
 
-.agumon{
-  position: absolute;
-  top: -100px;
-  left: 0px;
-  width: 200px;
-  
-}
-.gabumon{
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 200px;
-  -ms-flex-align: center;
-}
-.digivolutions img{
-  width: 200px;
-  
-}
 
-.digivolutions{
- top: -20px;
- text-align: right;
- 
-}
 
-.digivolutions p{
-  font-family: "Jersey 10";
-  font-size: 60px;
-  position: absolute;
-  left: 300px;
-  margin-top: -135px; 
-  text-align: center;
-  text-shadow: 0 0 10px #FFFFFF, 0 0 50px #FFFFFF , 0 0 15px #FFFFFF, 0 0 10px #FFFFFF, 0 0 10px #FFFFFF, 0 0 10px #FFFFFF;
-  animation: pulse 10s infinite;
 
-}
 
-.digivolutions.agumon p{
-  
-  color: rgba(233,137,56,1);
-}
 
-.digivolutions.gabumon p{
-  
-  color: rgba(91,121,177,1);
-}
-
-.digivolutions.piyomon p{
-  
-  color: rgba(159,33,43,1);
-}
-
-.digivolutions.tentomon p{
-  
-  color: rgba(139,155,167,1);
-}
-
-.digivolutions.palmon p{
-  
-  color: rgba(108,152,67,1);
-}
-
-.digivolutions.gomamon p{
-  
-  color: rgba(106,112,129,1);
-}
-
-.digivolutions.patamon p{
-  
-  color: rgba(196,170,84,1);
-}
-.digivolutions.tailmon p{
-  
-  color: rgba(185,86,139,1);
-}
 
 @keyframes pulse {
   0% {
@@ -355,13 +337,6 @@ main .character .image{
 }
 
 
-.digivolutions button{
-  border: none; /* Remove the border from the buttons */
-  background: none; /* Optional: Remove any default background */
-  cursor: pointer; /* Add a pointer cursor for better UX */
-  border-radius: 80%;
-
- }
 
 
 
@@ -442,7 +417,7 @@ main .character .image{
 }
 .choicebuttons .button.jyobtn.selected{
   
-  box-shadow: 0 -4px 5px rgba(106,112,129,1);
+  box-shadow: 0 4px -5px rgba(106,112,129,1);
 }
 .choicebuttons .button.takerubtn.selected{
   
